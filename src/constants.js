@@ -28,7 +28,7 @@ export const BRAND = {
 export const OVERVIEW = {
   heading: "Overview",
   body:
-    "CipherAuth is a secure, cross-platform TOTP (Time-based One-Time Password) authenticator app built with Flutter. It is designed for simplicity and security, providing a fully local encrypted vault for 2FA tokens across Android and Windows. Started in July 2025,initially developed using Python nearly for half a year, then switched to Flutter to cater for every platform. Source-available on GitHub and available on the Microsoft Store for Windows and Google Play Store for Android.",
+    "CipherAuth is a secure, cross-platform TOTP (Time-based One-Time Password) authenticator app built with Flutter. It is designed for simplicity and security, providing a fully local encrypted vault for 2FA tokens across Android and Windows. Started in July 2025, initially developed using Python nearly for half a year, then switched to Flutter to cater for every platform. Source-available on GitHub and available on the Microsoft Store for Windows and Google Play Store for Android.",
   headerImage,
 };
 
