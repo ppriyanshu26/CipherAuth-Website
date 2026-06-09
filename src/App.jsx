@@ -9,6 +9,7 @@ import {
   OVERVIEW,
   PHILOSOPHY,
   ROUTES,
+  STORY_TIME,
   UPDATES,
   WHY,
 } from "./constants";
@@ -510,6 +511,20 @@ function App() {
       <section className="featuresShowcase" aria-label={FEATURES.heading}>
         <h2 className="sectionTitle">{FEATURES.heading}</h2>
         <FeatureCarousel />
+      </section>
+
+      <section className="storyTimeSection" aria-label={STORY_TIME.heading}>
+        <div className="storyTimePanel">
+          <h2 className="sectionTitle">{STORY_TIME.heading}</h2>
+          <div className="storyTimeGrid">
+            {STORY_TIME.blogs.map((blog, index) => (
+              <article className="storyCard" key={index}>
+                <h3 className="storyTitle">{blog.title}</h3>
+                <p className="storyExcerpt">{blog.excerpt}</p>
+              </article>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="info" aria-label="Features and latest updates">

@@ -11,6 +11,9 @@ import exportVideo from "./assets/videos/exportImport.mp4";
 import recycleBinImage from "./assets/images/recycleBin.png";
 import viewqrVideo from "./assets/videos/viewqr.mp4";
 import lightThemeImage from "./assets/images/light.png";
+import autofillImage from './assets/images/autofill.png';
+import cardImage from './assets/images/card.png';
+import passphraseImage from './assets/images/passphrase.png';
 
 export const ROUTES = {
   home: "/",
@@ -20,7 +23,7 @@ export const ROUTES = {
 
 export const BRAND = {
   name: "CipherAuth",
-  taglinePrimary: "Your 2FA, Your Device.",
+  taglinePrimary: "Your Credentials, Your Device.",
   taglineSecondary: "Privacy meets Convenience",
   appIcon,
 };
@@ -28,7 +31,7 @@ export const BRAND = {
 export const OVERVIEW = {
   heading: "Overview",
   body:
-    "CipherAuth is a secure, cross-platform TOTP (Time-based One-Time Password) authenticator app built with Flutter. It is designed for simplicity and security, providing a fully local encrypted vault for 2FA tokens across Android and Windows. Started in July 2025, initially developed using Python nearly for half a year, then switched to Flutter to cater for every platform. Source-available on GitHub and available on the Microsoft Store for Windows and Google Play Store for Android.",
+    "CipherAuth is a secure, offline-first, cross-platform password manager application designed for simplicity, security, and privacy. Built with Flutter, it provides an encrypted vault to store both your 2FA authentication tokens and passwords across Android and Windows.",
   headerImage,
 };
 
@@ -88,12 +91,16 @@ export const FEATURES = {
       details: "All your credentials are encrypted with AES-GCM.",
     },
     {
-      name: "Cross-platform",
-      details: "Works across Android and Windows with a consistent experience.",
+      name: "Passphrase Generator",
+      details: "Switch to passphrases, easy to remeber, harder to crack.",
     },
     {
-      name: "Modern UI",
-      details: "Clean, intuitive light/dark interface built with Flutter.",
+      name: "Autofill",
+      details: "Autofill your login credentials directly on apps and browsers.",
+    },
+    {
+      name: "Cross-platform",
+      details: "Works across Android and Windows with a consistent experience.",
     },
     {
       name: "Biometric Unlock",
@@ -114,6 +121,14 @@ export const FEATURES = {
     {
       name: "QR Code Support",
       details: "View and scan QR codes using other apps for easy setup.",
+    },
+    {
+      name: "Modern UI",
+      details: "Clean, intuitive light/dark interface built with Flutter.",
+    },
+    {
+      name: "Password Cards",
+      details: "Long press a credential to view its details.",
     },
   ],
   itemsDetailed: [
@@ -137,21 +152,30 @@ export const FEATURES = {
       },
     },
     {
+      name: "Passphrase Generator",
+      details: "Passphrases are sequences of random words (e.g., 'correct-bell-pepper-salt') instead of traditional passwords. Because of their length, they are highly secure and extremely difficult for computers to brute-force, yet much easier to remember and type.",
+      media: {
+        type: "image",
+        src: passphraseImage,
+        alt: "Say Hello To Passphrases",
+      },
+    },
+    {
+      name: "Autofill",
+      details: "CipherAuth integrates with the operating system itself, which tells the app the url of the website, and CipherAuth securely fills the credentials directly in the input fields.",
+      media: {
+        type: "image",
+        src: autofillImage,
+        alt: "Autofill Passwords",
+      },
+    },
+    {
       name: "Cross-platform",
       details: "Built using Flutter for a consistent experience across Android and Windows devices. Collaborations and suggestions are welcome to expand to more platforms in the future.",
       media: {
         type: "image",
         src: storesImage,
         alt: "CipherAuth on Google Play Store and Microsoft Store",
-      },
-    },
-    {
-      name: "Modern UI",
-      details: "The app is designed with a clean, intuitive interface that supports both light and dark themes. It provides a seamless and responsive user experience across all supported platforms.",
-      media: {
-        type: "image",
-        src: lightThemeImage,
-        alt: "Light theme UI",
       },
     },
     {
@@ -200,6 +224,24 @@ export const FEATURES = {
         src: viewqrVideo,
         alt: "View QR code and scan with another device",
         label: "Tap to view the mechanism",
+      },
+    },
+    {
+      name: "Modern UI",
+      details: "The app is designed with a clean, intuitive interface that supports both light and dark themes. It provides a seamless and responsive user experience across all supported platforms.",
+      media: {
+        type: "image",
+        src: lightThemeImage,
+        alt: "Light theme UI",
+      },
+    },
+    {
+      name: "Password Cards",
+      details: "Long pressing a password reveals its fields, its creation and update date and its credential id, a unique hash value from which it is identified in sync.",
+      media: {
+        type: "image",
+        src: cardImage,
+        alt: "Password Details",
       },
     },
   ],
@@ -263,16 +305,29 @@ export const DEVELOPER = {
 export const UPDATES = {
   heading: "Latest Updates",
   emptyState: "No updates yet.",
-  previewCount: 4,
+  previewCount: 3,
   viewAllLabel: "View complete logs",
   backLabel: "Back",
   items: [
+    {
+      date: "10th June, 2026",
+      title: "v8.0.0",
+      description: [
+        "CipherAuth now has a dedicated tab for managing your passwords.",
+        "Password hash is complete;y removed from the device storage, and authentication happens by decrypting the vault with the password entered.",
+        "Local Sync is now faster without sharing the password hash over the network.",
+        "Autofill your login credentials directly on apps and browsers. Currently supported in Android only.",
+        "Say goodbye to passwords, say hello to passphrases. Easy to remember, harder to crack.",
+        "Import and export of backup files is now more smooth.",
+        "Long press a credential to view its details.",
+      ],
+      link: "https://github.com/ppriyanshu26/CipherAuth-Flutter/releases/tag/v8.0.0",
+    },
     {
       date: "4th May, 2026",
       title: "Google Play Store Release",
       description: [
         "CipherAuth is now available on the Google Play Store for Android users, providing a seamless installation and update experience directly through the official channel.",
-        
       ],
       link: "https://play.google.com/store/apps/details?id=in.ppriyanshu.cipherauth",
     },
@@ -281,7 +336,6 @@ export const UPDATES = {
       title: "v7.4.4",
       description: [
         "About screen updated with Google Play Store and Microsoft Store links.",
-        
       ],
       link: "https://github.com/ppriyanshu26/CipherAuth-Flutter/releases/tag/v7.4.4",
     },
@@ -290,7 +344,6 @@ export const UPDATES = {
       title: "v7.4.3",
       description: [
         "Users get a disclaimer on the create password screen to always remember their password as there as no back doors.",
-        
       ],
       link: "https://github.com/ppriyanshu26/CipherAuth-Flutter/releases/tag/v7.4.3",
     },
@@ -300,7 +353,6 @@ export const UPDATES = {
       description: [
         "On adding account, first character in every word of the platform name is capitalized.",
         "Platform name is further truncated on mobile devices for clean UI.",
-        
       ],
       link: "https://github.com/ppriyanshu26/CipherAuth-Flutter/releases/tag/v7.4.2",
     },
@@ -313,7 +365,6 @@ export const UPDATES = {
         "Android now handles files with same names more reliably, than appending numbers at last.",
         "The URLs in QR codes now handles encoding for special characters, and extracting the username by itself if not mentioned explicitly.",
         "Added icons on empty screens.",
-        
       ],
       link: "https://github.com/ppriyanshu26/CipherAuth-Flutter/releases/tag/v7.4.1",
     },
@@ -522,3 +573,22 @@ export const UPDATES = {
     },
   ],
 };
+
+export const STORY_TIME = {
+  heading: "Story Time",
+  blogs: [
+    {
+      title: "My Home Keys",
+      excerpt: "Leaving my home with a lock always keeps me assured. The key is with me, and no one can enter without my knowing. But what if the key gets lost, or what if someone finds a way to pick the lock?\n\nTo make things safer, I thought of hiring a security guard at my doorstep. I gave him a secret phrase that only I know of, which changes every minute based on the time. Now, I feel a lot more relaxed. Even if someone steals my physical key and tries to open the lock, they cannot get past the guard without knowing the secret phrase. It acts as a solid security measure.\n\nBut there is one major issue that always bugs me. The guard has no memory of who I am. Every single time I want to enter my own house, he stands in my way and demands the new code. He does not care if he saw me just five minutes ago. I am constantly tired of answering his questions just to get into my own home.\n\nIt makes me realize that absolute privacy often comes at the cost of convenience.",
+    },
+    {
+      title: "The Cool Guy",
+      excerpt: "Just yesterday, I came across a guy while entering my neighborhood. He popped up from nowhere, looking like a helpful neighbor. He asked me in a very friendly voice why I bother carrying all these heavy keys around.\n\nHe explained that almost everyone in the area trusts him with their keys. He keeps them in a giant locker that only he can open. If I join them, I will never have to worry about securing my keys again. Whenever I want to enter a house, I just ask him, and he opens the door for me. It sounds like an amazing deal since everyone else is already doing it.\n\nTo make it even better, he seems to know all the shopkeepers and home owners around. Whenever I try to enter a new place, if he is there to say he knows me, the owner lets me in right away without asking any questions. It is incredibly easy and feels like magic.\n\nThis wonderful convenience definitely has a scary trade-off with my privacy.",
+    },
+    {
+      title: "Digital Identity",
+      excerpt: "Handing over your home keys to a stranger, just because everyone does so feels weird. But now think of your home as your social media account and the key as your password.\n\nThese password managers do the exact same thing. Yeah your details are encrypted, but mostly they hold the key. A true encryption shouldn't have any backdoors, its YOUR DATA - YOUR RESPONSIBILITY. \n\nYeah this password management is crazy, but think of using 'authenticate using KNOWN TECH GIANT', what happens in this case is not you being verified, but that provider telling the client site that, 'I know this person, let him in'. \n\nThe day you are locked out of your account, the day that tech giant can't remember you, you lose your data. Its the right time to take hold of your DIGITAL IDENTITY, and keep cloud expose of persoanl data to minimum. The eveolution to AI has even started to bring out the vulnerabilities in many sites that were secured from decades.",
+    },
+  ],
+};
+
