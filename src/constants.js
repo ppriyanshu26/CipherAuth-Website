@@ -313,7 +313,7 @@ export const UPDATES = {
       date: "1st August, 2026",
       title: "v8.1.0",
       description: [
-        "Dedicated FAQs tab so it is easier to find and resolve some common queries.,
+        "Dedicated FAQs tab so it is easier to find and resolve some common queries.",
         "Dedicated Changelog tab so users can now see the changes in each version for transparency.",
         "Password details are equipped with their authenticator codes.",
         "Users can make a new login entry for the specific app opened.",
