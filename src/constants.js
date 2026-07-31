@@ -305,16 +305,28 @@ export const DEVELOPER = {
 export const UPDATES = {
   heading: "Latest Updates",
   emptyState: "No updates yet.",
-  previewCount: 3,
+  previewCount: 2,
   viewAllLabel: "View complete logs",
   backLabel: "Back",
   items: [
+    {
+      date: "1st August, 2026",
+      title: "v8.1.0",
+      description: [
+        "Dedicated FAQs tab so it is easier to find and resolve some common queries.,
+        "Dedicated Changelog tab so users can now see the changes in each version for transparency.",
+        "Password details are equipped with their authenticator codes.",
+        "Users can make a new login entry for the specific app opened.",
+        "Various bug fixes.",
+      ],
+      link: "https://github.com/ppriyanshu26/CipherAuth-Flutter/releases/tag/v8.1.0",
+    },
     {
       date: "10th June, 2026",
       title: "v8.0.0",
       description: [
         "CipherAuth now has a dedicated tab for managing your passwords.",
-        "Password hash is complete;y removed from the device storage, and authentication happens by decrypting the vault with the password entered.",
+        "Password hash is completely removed from the device storage, and authentication happens by decrypting the vault with the password entered.",
         "Local Sync is now faster without sharing the password hash over the network.",
         "Autofill your login credentials directly on apps and browsers. Currently supported in Android only.",
         "Say goodbye to passwords, say hello to passphrases. Easy to remember, harder to crack.",
