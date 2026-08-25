@@ -11,7 +11,7 @@
 
 CipherAuth is a secure, offline-first, cross-platform password manager application designed for simplicity, security, and privacy. Built with Flutter, it provides an encrypted vault to store both your 2FA authentication tokens and passwords across Android and Windows.
 
-**Checkout the app website for details:** [CipherAuth Website](https://cipherauth.ppriyanshu26.online)
+**Checkout the app website for details:** [CipherAuth Website](https://cipherauth-ppriyanshu.vercel.app)
 
 > [!IMPORTANT]
 > License Model: CipherAuth is source-available software (not open-source). See the [LICENSE](https://github.com/ppriyanshu26/CipherAuth-Flutter/blob/main/LICENSE) file for usage and redistribution terms.

@@ -146,7 +146,7 @@ export const FEATURES = {
       details: "All your data stays on your device by default. The password hash and the biometric data never leave your device, and the data is decrypted only during runtime and written nowhere.",
       media: {
         type: "link",
-        href: "https://cipher.ppriyanshu26.online/",
+        href: "https://cipher-ppriyanshu.vercel.app/",
         badge: "AES-GCM Encryption",
         label: "Click to view the encryption algorithm",
       },
@@ -277,7 +277,7 @@ export const DEVELOPER = {
   links: [
     {
       label: "Portfolio",
-      href: "https://ppriyanshu26.online/",
+      href: "https://ppriyanshu.vercel.app/",
     },
     {
       label: "LinkedIn",
@@ -285,7 +285,7 @@ export const DEVELOPER = {
     },
     {
       label: "Mail",
-      href: "mailto:cipherauth@ppriyanshu26.online",
+      href: "mailto:cipherauth@proton.me",
     },
     {
       label: "GitHub",
