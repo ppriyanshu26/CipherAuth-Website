@@ -305,10 +305,30 @@ export const DEVELOPER = {
 export const UPDATES = {
   heading: "Latest Updates",
   emptyState: "No updates yet.",
-  previewCount: 2,
+  previewCount: 3,
   viewAllLabel: "View complete logs",
   backLabel: "Back",
   items: [
+    {
+      date: "26th August, 2026",
+      title: "One Year of CipherAuth",
+      description: [
+        "200th GitHub commit. A year of shipping and improving a privacy focused cross platform password manager, currently supporting Windows and Android ecosystems.",
+      ],
+      link: "https://play.google.com/store/apps/details?id=in.ppriyanshu.cipherauth",
+    },
+    {
+      date: "26th August, 2026",
+      title: "v8.1.1",
+      description: [
+        "Contact details updated to ProtonMail for privacy.",
+        "Sync shows device details.",
+        "Website URL changed.",
+        "Updated the register password screen to emphasize more on passphrases.",
+        "Minor UI fixes and UX improvements.",
+      ],
+      link: "https://github.com/ppriyanshu26/CipherAuth-Flutter/releases/tag/v8.1.1",
+    },
     {
       date: "1st August, 2026",
       title: "v8.1.0",
@@ -456,7 +476,7 @@ export const UPDATES = {
       date: "23rd February, 2026",
       title: "v6.5.2",
       description: [
-        "Sync now helps keep track of deleted accounts top provide consistent sharing of the same set of credentials across multiple devices.",
+        "Sync now helps keep track of deleted accounts to provide consistent sharing of the same set of credentials across multiple devices.",
         "Users are shown a statement regarding the potential risks of viewing QRs and are prompted to use sync for encrypted sharing.",
         "Adjusted spacings between containers and consistent logic across similar screens.",
       ],
